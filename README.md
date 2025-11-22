@@ -11,7 +11,7 @@ An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate wo
 - **[docs/examples/EXAMPLE_QUERIES.md](docs/examples/EXAMPLE_QUERIES.md)** - 675+ example queries
 - **[docs/todo/TODO.md](docs/todo/TODO.md)** - Project roadmap and tasks
 - **[docs/guides/VISUALIZATION_GUIDE.md](VISUALIZATION_GUIDE.md)** - Smart visualization options
-- **[docs/guides/IBM_WATSONX_SETUP.md](IBM_WATSONX_SETUP.md)** - Complete IBM setup guide
+- **[docs/setup/IBM_WATSONX_SETUP.md](IBM_WATSONX_SETUP.md)** - Complete IBM setup guide
 
 ## 🎯 Unique Value Proposition
 
@@ -192,4 +192,5 @@ See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guide
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
