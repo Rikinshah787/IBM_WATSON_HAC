@@ -1,10 +1,3 @@
-## 📊 Features
-
-- **600+ Use Cases** across 4 sectors
-- **Cross-Sector Analysis** - Identify relationships between sectors
-- **Action Automation** - Auto-approvals, alerts, task assignments
-# OrchestrateIQ - AI-Powered Business Command Center
-
 ![OrchestrateIQ Architecture](docs/architecture_diagram.png)
 
 An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate workflows across HR, Sales, Customer Service, and Finance sectors. This solution demonstrates cross-sector intelligence, proactive orchestration, and actionable automation.
@@ -25,6 +18,13 @@ An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate wo
 - Proactively triggers workflows and automates actions
 - Handles complex, multi-sector queries in natural language
 - Automates approvals, routing, and coordination across systems
+  
+## 📊 Features
+
+- **600+ Use Cases** across 4 sectors
+- **Cross-Sector Analysis** - Identify relationships between sectors
+- **Action Automation** - Auto-approvals, alerts, task assignments
+# OrchestrateIQ - AI-Powered Business Command Center
 
 ## 🏗️ Architecture
 
@@ -126,6 +126,7 @@ See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guide
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
