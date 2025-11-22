@@ -1,4 +1,4 @@
-<h2 align="center">OrchestrateIQ - AI-Powered Business Command Center</h2>
+<h1 align="center"><b>OrchestrateIQ - AI-Powered Business Command Center</b></h1>
 
 ![OrchestrateIQ Architecture](docs/architecture_diagram.png)
 
@@ -128,6 +128,7 @@ See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guide
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
