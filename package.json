@@ -1,0 +1,22 @@
+{
+  "name": "orchestrateiq",
+  "version": "1.1.0",
+  "description": "OrchestrateIQ - AI-Powered Business Command Center with watsonx Orchestrate",
+  "private": true,
+  "scripts": {
+    "version:patch": "npm version patch --no-git-tag-version && node scripts/update-version.js",
+    "version:minor": "npm version minor --no-git-tag-version && node scripts/update-version.js",
+    "version:major": "npm version major --no-git-tag-version && node scripts/update-version.js",
+    "version:show": "node scripts/show-version.js",
+    "precommit": "node scripts/check-version.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rikinshah787/IBM_WATSON_HAC.git"
+  },
+  "author": "Rikin Shah",
+  "license": "MIT",
+  "workspaces": [
+    "frontend"
+  ]
+}

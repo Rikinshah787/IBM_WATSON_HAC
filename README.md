@@ -68,6 +68,8 @@ npm start
 - [API.md](API.md) - API documentation
 - [DEBUG.md](DEBUG.md) - Debug logging guide
 - [DEPLOYMENT.md](DEPLOYMENT.md) - Deployment instructions
+- [VERSIONING.md](VERSIONING.md) - Version management guide
+- [CHANGELOG.md](CHANGELOG.md) - Version history and changes
 
 ## ⚠️ Important Notes
 

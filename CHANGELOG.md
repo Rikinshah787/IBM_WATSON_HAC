@@ -2,6 +2,26 @@
 
 All notable changes to OrchestrateIQ will be documented in this file.
 
+## [1.1.0] - 2025-11-22
+
+### Added
+- Automated version management system
+- Root-level package.json for project-wide version tracking
+- Version management scripts (patch, minor, major)
+- VERSION file for easy version reference
+- Pre-commit hook to remind about version updates
+- Comprehensive VERSIONING.md guide
+- Automatic CHANGELOG.md updates on version bump
+
+### Changed
+- Synchronized version across all package.json files
+- Enhanced project structure with scripts directory
+
+### Technical
+- Added scripts/update-version.js for automated version synchronization
+- Added scripts/show-version.js for version information display
+- Added scripts/check-version.js for pre-commit version checks
+
 ## [1.0.0] - 2024-01-01
 
 ### Added

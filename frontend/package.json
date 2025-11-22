@@ -1,6 +1,6 @@
 {
   "name": "orchestrateiq-frontend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "OrchestrateIQ - AI-Powered Business Command Center Frontend",
   "private": true,
   "dependencies": {
@@ -37,4 +37,3 @@
   },
   "proxy": "http://localhost:8000"
 }
-
