@@ -64,8 +64,6 @@ const Visualizations = ({ data, sector, theme }) => {
           </AreaChart>
         );
       case 'pie':
-        // For pie chart, we might want to aggregate or show distribution
-        // This is a simplified example using the same data
         return (
           <PieChart>
             <Pie
@@ -161,4 +159,3 @@ const Visualizations = ({ data, sector, theme }) => {
 };
 
 export default Visualizations;
-
