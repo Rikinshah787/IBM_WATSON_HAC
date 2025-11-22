@@ -73,11 +73,6 @@ npm start
 
 ## ⚠️ Important Notes
 
-**Prohibited Models** (Do NOT use):
-- llama-3-405b-instruct
-- mistral-medium-2505
-- mistral-small-3-1-24b-instruct-2503
-
 **Approved Models**:
 - IBM Granite models (via watsonx.ai)
 - Models available through watsonx Orchestrate
@@ -99,4 +94,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
