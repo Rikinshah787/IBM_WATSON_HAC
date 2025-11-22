@@ -1,5 +1,5 @@
 # OrchestrateIQ - AI-Powered Business Command Center  
-                     ** AgenticAlpha **
+                    
 
 ![OrchestrateIQ Architecture](docs/architecture_diagram.png)
 
@@ -74,7 +74,7 @@ npm start
 
 ## 📊 Features
 
-- **8+ Use Cases** across 4 sectors
+- **600+ Use Cases** across 4 sectors
 - **Cross-Sector Analysis** - Identify relationships between sectors
 - **Action Automation** - Auto-approvals, alerts, task assignments
 - **Beautiful UI** - Galaxy dark theme and Antigravity light theme
@@ -96,12 +96,12 @@ npm start
 
 ## ⚠️ Important Notes
 
-**Prohibited Models** (Do NOT use):
+**Not Used Models** (We DO NOT use):
 - llama-3-405b-instruct
 - mistral-medium-2505
 - mistral-small-3-1-24b-instruct-2503
 
-**Approved Models**:
+**What Models we use**:
 - IBM Granite models (via watsonx.ai)
 - Models available through watsonx Orchestrate
 
