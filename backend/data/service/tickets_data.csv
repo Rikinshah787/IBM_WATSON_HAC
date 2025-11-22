@@ -1,0 +1,81 @@
+ticket_id,customer_id,customer_name,subject,priority,status,age_days,created_date
+TICKET-0001,CUST0035,Customer 35,Issue 1,Medium,Open,9,2025-11-15
+TICKET-0002,CUST0017,Customer 17,Issue 2,High,In Progress,2,2025-11-04
+TICKET-0003,CUST0007,Customer 07,Issue 3,Medium,Pending,15,2025-11-02
+TICKET-0004,CUST0017,Customer 17,Issue 4,Low,Pending,9,2025-11-18
+TICKET-0005,CUST0030,Customer 30,Issue 5,Low,Resolved,15,2025-10-29
+TICKET-0006,CUST0037,Customer 37,Issue 6,Low,Resolved,1,2025-10-30
+TICKET-0007,CUST0018,Customer 18,Issue 7,Medium,In Progress,13,2025-10-30
+TICKET-0008,CUST0040,Customer 40,Issue 8,High,Pending,12,2025-11-08
+TICKET-0009,CUST0038,Customer 38,Issue 9,Critical,In Progress,12,2025-11-02
+TICKET-0010,CUST0039,Customer 39,Issue 10,Critical,Open,2,2025-11-08
+TICKET-0011,CUST0032,Customer 32,Issue 11,Low,Pending,3,2025-10-26
+TICKET-0012,CUST0033,Customer 33,Issue 12,Medium,Resolved,9,2025-11-05
+TICKET-0013,CUST0001,Customer 01,Issue 13,High,Pending,5,2025-10-28
+TICKET-0014,CUST0026,Customer 26,Issue 14,Critical,In Progress,13,2025-11-14
+TICKET-0015,CUST0029,Customer 29,Issue 15,High,Resolved,7,2025-10-29
+TICKET-0016,CUST0024,Customer 24,Issue 16,High,Resolved,4,2025-11-08
+TICKET-0017,CUST0020,Customer 20,Issue 17,Low,Resolved,8,2025-11-09
+TICKET-0018,CUST0035,Customer 35,Issue 18,Low,Pending,1,2025-11-07
+TICKET-0019,CUST0037,Customer 37,Issue 19,High,Open,8,2025-11-19
+TICKET-0020,CUST0013,Customer 13,Issue 20,High,Pending,3,2025-11-08
+TICKET-0021,CUST0006,Customer 06,Issue 21,Critical,In Progress,3,2025-11-17
+TICKET-0022,CUST0013,Customer 13,Issue 22,High,In Progress,9,2025-11-01
+TICKET-0023,CUST0034,Customer 34,Issue 23,Critical,Pending,2,2025-11-10
+TICKET-0024,CUST0003,Customer 03,Issue 24,High,Resolved,11,2025-11-04
+TICKET-0025,CUST0036,Customer 36,Issue 25,Medium,Open,10,2025-11-08
+TICKET-0026,CUST0010,Customer 10,Issue 26,Low,Open,4,2025-11-15
+TICKET-0027,CUST0012,Customer 12,Issue 27,Medium,In Progress,14,2025-11-20
+TICKET-0028,CUST0010,Customer 10,Issue 28,Low,Resolved,10,2025-10-25
+TICKET-0029,CUST0012,Customer 12,Issue 29,High,Pending,13,2025-11-05
+TICKET-0030,CUST0009,Customer 09,Issue 30,Medium,Pending,5,2025-11-17
+TICKET-0031,CUST0016,Customer 16,Issue 31,Low,Open,11,2025-10-23
+TICKET-0032,CUST0019,Customer 19,Issue 32,High,Resolved,10,2025-11-08
+TICKET-0033,CUST0006,Customer 06,Issue 33,Critical,Pending,12,2025-10-28
+TICKET-0034,CUST0030,Customer 30,Issue 34,Low,Open,1,2025-10-27
+TICKET-0035,CUST0007,Customer 07,Issue 35,High,Pending,11,2025-10-22
+TICKET-0036,CUST0039,Customer 39,Issue 36,Low,Pending,15,2025-10-22
+TICKET-0037,CUST0025,Customer 25,Issue 37,High,In Progress,6,2025-11-14
+TICKET-0038,CUST0026,Customer 26,Issue 38,High,Resolved,12,2025-10-28
+TICKET-0039,CUST0039,Customer 39,Issue 39,Critical,Pending,14,2025-11-20
+TICKET-0040,CUST0028,Customer 28,Issue 40,High,In Progress,8,2025-11-13
+TICKET-0041,CUST0026,Customer 26,Issue 41,Low,Resolved,6,2025-11-03
+TICKET-0042,CUST0017,Customer 17,Issue 42,Medium,In Progress,12,2025-11-17
+TICKET-0043,CUST0010,Customer 10,Issue 43,Critical,Resolved,13,2025-11-18
+TICKET-0044,CUST0035,Customer 35,Issue 44,Medium,Open,12,2025-11-08
+TICKET-0045,CUST0017,Customer 17,Issue 45,Medium,Resolved,11,2025-11-19
+TICKET-0046,CUST0031,Customer 31,Issue 46,Low,Pending,4,2025-10-25
+TICKET-0047,CUST0002,Customer 02,Issue 47,Low,Pending,9,2025-10-29
+TICKET-0048,CUST0019,Customer 19,Issue 48,Low,Resolved,12,2025-11-16
+TICKET-0049,CUST0014,Customer 14,Issue 49,Low,Pending,11,2025-11-20
+TICKET-0050,CUST0010,Customer 10,Issue 50,Low,Resolved,14,2025-11-12
+TICKET-0051,CUST0020,Customer 20,Issue 51,Medium,Resolved,13,2025-10-24
+TICKET-0052,CUST0030,Customer 30,Issue 52,Critical,Open,12,2025-11-10
+TICKET-0053,CUST0017,Customer 17,Issue 53,Critical,Pending,10,2025-11-18
+TICKET-0054,CUST0005,Customer 05,Issue 54,High,In Progress,13,2025-11-12
+TICKET-0055,CUST0030,Customer 30,Issue 55,Medium,Open,10,2025-11-13
+TICKET-0056,CUST0028,Customer 28,Issue 56,Medium,Open,15,2025-11-16
+TICKET-0057,CUST0030,Customer 30,Issue 57,Medium,Open,5,2025-11-12
+TICKET-0058,CUST0017,Customer 17,Issue 58,High,Pending,7,2025-11-18
+TICKET-0059,CUST0029,Customer 29,Issue 59,Critical,In Progress,1,2025-11-17
+TICKET-0060,CUST0013,Customer 13,Issue 60,Critical,Open,14,2025-11-19
+TICKET-0061,CUST0039,Customer 39,Issue 61,High,Pending,9,2025-11-02
+TICKET-0062,CUST0030,Customer 30,Issue 62,Low,Resolved,13,2025-11-19
+TICKET-0063,CUST0017,Customer 17,Issue 63,High,Pending,13,2025-11-07
+TICKET-0064,CUST0031,Customer 31,Issue 64,High,In Progress,10,2025-11-19
+TICKET-0065,CUST0019,Customer 19,Issue 65,Low,Open,1,2025-11-12
+TICKET-0066,CUST0004,Customer 04,Issue 66,Critical,Resolved,15,2025-11-13
+TICKET-0067,CUST0012,Customer 12,Issue 67,Medium,Open,5,2025-11-09
+TICKET-0068,CUST0035,Customer 35,Issue 68,Low,In Progress,13,2025-10-30
+TICKET-0069,CUST0036,Customer 36,Issue 69,Low,In Progress,2,2025-10-28
+TICKET-0070,CUST0012,Customer 12,Issue 70,Critical,Resolved,15,2025-11-17
+TICKET-0071,CUST0018,Customer 18,Issue 71,High,Resolved,9,2025-11-13
+TICKET-0072,CUST0038,Customer 38,Issue 72,Medium,Resolved,3,2025-11-15
+TICKET-0073,CUST0018,Customer 18,Issue 73,Medium,Resolved,4,2025-11-06
+TICKET-0074,CUST0022,Customer 22,Issue 74,Critical,Open,11,2025-11-11
+TICKET-0075,CUST0007,Customer 07,Issue 75,Medium,Open,5,2025-11-13
+TICKET-0076,CUST0029,Customer 29,Issue 76,Medium,Open,12,2025-10-24
+TICKET-0077,CUST0030,Customer 30,Issue 77,Critical,Resolved,6,2025-11-10
+TICKET-0078,CUST0003,Customer 03,Issue 78,Low,Open,12,2025-11-09
+TICKET-0079,CUST0028,Customer 28,Issue 79,Medium,In Progress,6,2025-11-09
+TICKET-0080,CUST0027,Customer 27,Issue 80,Critical,Resolved,12,2025-11-11

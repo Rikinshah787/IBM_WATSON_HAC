@@ -1,0 +1,112 @@
+.sector-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sector-card.dark {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.sector-card.dark:hover {
+  border-color: rgba(102, 126, 234, 0.6);
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.2);
+}
+
+.sector-card.light {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(240, 147, 251, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.sector-card.light:hover {
+  border-color: rgba(240, 147, 251, 0.6);
+  box-shadow: 0 12px 40px rgba(240, 147, 251, 0.2);
+}
+
+.sector-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sector-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.5));
+}
+
+.sector-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.sector-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.sector-card.light .metric-item {
+  background: rgba(240, 147, 251, 0.1);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+.metric-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.sector-card.light .metric-value {
+  color: #f093fb;
+}
+
+.sector-alerts,
+.sector-trends {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.sector-trends {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sector-card {
+    padding: 20px;
+  }
+  
+  .sector-name {
+    font-size: 1.2rem;
+  }
+}
+

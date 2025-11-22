@@ -1,0 +1,17 @@
+.visualizations {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.visualizations.light {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
