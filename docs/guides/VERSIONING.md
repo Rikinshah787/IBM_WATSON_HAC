@@ -16,7 +16,7 @@ The current version is tracked in multiple places:
 - `package.json` (root)
 - `frontend/package.json`
 - `VERSION` file
-- `CHANGELOG.md`
+- `docs/meta/CHANGELOG.md`
 
 ## How to Update Version
 

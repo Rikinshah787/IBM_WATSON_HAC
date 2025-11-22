@@ -18,19 +18,19 @@ if (fs.existsSync(frontendPackagePath)) {
 }
 
 // Update CHANGELOG.md
-const changelogPath = path.join(__dirname, '..', 'CHANGELOG.md');
+const changelogPath = path.join(__dirname, '..', 'docs', 'meta', 'CHANGELOG.md');
 if (fs.existsSync(changelogPath)) {
   const changelog = fs.readFileSync(changelogPath, 'utf8');
   const today = new Date().toISOString().split('T')[0];
-  
+
   // Check if this version already exists in the changelog
   if (!changelog.includes(`## [${newVersion}]`)) {
     const newEntry = `\n## [${newVersion}] - ${today}\n\n### Changed\n- Version bump to ${newVersion}\n- [Add your changes here]\n`;
-    
+
     // Insert after the first header
     const lines = changelog.split('\n');
     const insertIndex = lines.findIndex(line => line.startsWith('## ['));
-    
+
     if (insertIndex !== -1) {
       lines.splice(insertIndex, 0, newEntry);
       fs.writeFileSync(changelogPath, lines.join('\n'));
