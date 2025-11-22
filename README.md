@@ -29,7 +29,7 @@ An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate wo
 - **Action Automation** - Auto-approvals, alerts, task assignments
 
 
-## 🏗️ Architecture
+## 🏗️ Tech Stack
 
 - **Backend**: Python FastAPI with watsonx Orchestrate integration
 - **Frontend**: React.js with beautiful dual themes (Galaxy Dark / Antigravity Light)
@@ -129,6 +129,7 @@ See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guide
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
