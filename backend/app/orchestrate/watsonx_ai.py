@@ -6,6 +6,8 @@ Uses IBM Granite models (approved for hackathon)
 
 import logging
 import os
+import json
+import httpx
 from typing import Dict, Any, Optional
 from pydantic_settings import BaseSettings
 
@@ -37,6 +39,51 @@ class WatsonAI:
         self.is_available = bool(self.settings.api_key)
         logger.info(f"🔧 WatsonAI created (available: {self.is_available})")
     
+    async def _get_token(self) -> str:
+        """Get IAM token using API key"""
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
+                "https://iam.cloud.ibm.com/identity/token",
+                data={
+                    "apikey": self.settings.api_key,
+                    "grant_type": "urn:ibm:params:oauth:grant-type:apikey"
+                },
+                headers={"Content-Type": "application/x-www-form-urlencoded"}
+            )
+            response.raise_for_status()
+            return response.json()["access_token"]
+
+    async def _generate_text(self, prompt: str) -> str:
+        """Generate text using watsonx.ai API"""
+        token = await self._get_token()
+        
+        url = f"{self.settings.url}/ml/v1/text/generation?version=2023-05-29"
+        
+        payload = {
+            "input": prompt,
+            "parameters": {
+                "decoding_method": "greedy",
+                "max_new_tokens": 200,
+                "min_new_tokens": 0,
+                "stop_sequences": [],
+                "repetition_penalty": 1.0
+            },
+            "model_id": self.settings.model_id,
+            "project_id": self.settings.project_id
+        }
+        
+        headers = {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {token}"
+        }
+        
+        async with httpx.AsyncClient() as client:
+            response = await client.post(url, json=payload, headers=headers)
+            response.raise_for_status()
+            result = response.json()
+            return result["results"][0]["generated_text"]
+
     async def generate_insight(
         self,
         query: str,
@@ -60,11 +107,24 @@ class WatsonAI:
         
         try:
             logger.info("🤖 Generating insight with watsonx.ai...")
-            # TODO: Implement actual watsonx.ai API call
-            # For now, return a simple generated insight
-            insight = f"Based on the analysis of {len(data)} data points, I've identified key patterns and trends."
+            
+            # Construct prompt
+            data_summary = json.dumps(data, default=str)[:1000]  # Truncate to avoid token limits
+            prompt = f"""
+            Analyze the following data and answer the user's query.
+            
+            Query: {query}
+            
+            Data:
+            {data_summary}
+            
+            Provide a concise insight based on the data.
+            Insight:
+            """
+            
+            insight = await self._generate_text(prompt)
             logger.info("✅ Insight generated")
-            return insight
+            return insight.strip()
         except Exception as e:
             logger.error(f"❌ Failed to generate insight: {str(e)}", exc_info=True)
             return None
@@ -94,12 +154,43 @@ class WatsonAI:
         
         try:
             logger.info("🤖 Analyzing correlation with watsonx.ai...")
-            # TODO: Implement actual watsonx.ai correlation analysis
-            return {
-                "correlation": "positive",
-                "confidence": 0.85,
-                "description": "Advanced correlation analysis using watsonx.ai"
-            }
+            
+            data1_summary = json.dumps(sector1_data, default=str)[:500]
+            data2_summary = json.dumps(sector2_data, default=str)[:500]
+            
+            prompt = f"""
+            Analyze the correlation between these two datasets.
+            
+            Dataset 1:
+            {data1_summary}
+            
+            Dataset 2:
+            {data2_summary}
+            
+            Determine if there is a positive, negative, or no correlation.
+            Provide the result in JSON format with keys: correlation (string), confidence (float 0-1), description (string).
+            JSON:
+            """
+            
+            response_text = await self._generate_text(prompt)
+            
+            # Parse JSON from response (simple attempt)
+            try:
+                # Find JSON-like structure
+                start = response_text.find('{')
+                end = response_text.rfind('}') + 1
+                if start >= 0 and end > start:
+                    json_str = response_text[start:end]
+                    return json.loads(json_str)
+                else:
+                    raise ValueError("No JSON found in response")
+            except Exception:
+                # Fallback if parsing fails
+                return {
+                    "correlation": "uncertain",
+                    "confidence": 0.5,
+                    "description": response_text.strip()
+                }
         except Exception as e:
             logger.error(f"❌ Correlation analysis failed: {str(e)}", exc_info=True)
             return None
