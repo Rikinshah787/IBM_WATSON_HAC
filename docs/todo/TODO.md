@@ -1,5 +1,7 @@
 # 📝 Project To-Do List
 
+# IMPORTANT ---- Follow This for IBM SETUP -- docs/setup/IBM_WATSONX_SETUP.md
+
 ## 🚀 High Priority
 - [ ] **Deploy to Production**
   - [ ] Set up IBM Cloud environment
