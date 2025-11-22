@@ -1,4 +1,4 @@
-| Feature / Capability              | **Your System** | UiPath | Botpress | Make.com | Vertex AI |
+| Feature / Capability              | **Our System** | UiPath | Botpress | Make.com | Vertex AI |
 |----------------------------------|-----------------|--------|----------|----------|-----------|
 | Natural language intent recognition | ✔️ | ❌ | ✔️ | ❌ | ✔️ |
 | Cross‑sector skills (HR, Sales, Finance, Customer Service) | ✔️ | ❌ | ❌ | ❌ | ❌ |
