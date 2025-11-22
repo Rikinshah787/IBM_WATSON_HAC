@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Loader } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import { api } from '../services/api';
+import api from '../services/api';
 import './ChatInterface.css';
 
 const ChatInterface = () => {

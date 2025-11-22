@@ -1,51 +1,51 @@
 deal_id,customer_name,value,stage,probability,close_date,status
-DEAL-0001,Customer 1,118953,Negotiation,46,2026-01-17,stale
-DEAL-0002,Customer 2,64942,Qualification,36,2025-12-16,lost
-DEAL-0003,Customer 3,186397,Prospecting,88,2025-10-24,stale
-DEAL-0004,Customer 4,23392,Closed Won,42,2025-11-08,stale
-DEAL-0005,Customer 5,148689,Prospecting,83,2025-12-12,stale
-DEAL-0006,Customer 6,110950,Proposal,42,2025-11-21,active
-DEAL-0007,Customer 7,111745,Prospecting,73,2026-01-09,active
-DEAL-0008,Customer 8,49904,Qualification,43,2026-01-17,won
-DEAL-0009,Customer 9,77490,Prospecting,49,2025-11-26,active
-DEAL-0010,Customer 10,30128,Closed Won,39,2025-10-22,lost
-DEAL-0011,Customer 11,96241,Closed Lost,41,2025-11-06,stale
-DEAL-0012,Customer 12,60375,Negotiation,48,2025-10-22,active
-DEAL-0013,Customer 13,95953,Qualification,70,2025-12-11,stale
-DEAL-0014,Customer 14,80886,Prospecting,29,2026-02-02,active
-DEAL-0015,Customer 15,111320,Qualification,55,2026-02-04,stale
-DEAL-0016,Customer 16,65086,Qualification,11,2026-01-18,lost
-DEAL-0017,Customer 17,188766,Closed Lost,30,2026-02-11,won
-DEAL-0018,Customer 18,162745,Closed Won,25,2025-11-20,active
-DEAL-0019,Customer 19,185377,Negotiation,37,2025-12-22,won
-DEAL-0020,Customer 20,17638,Prospecting,80,2026-01-23,active
-DEAL-0021,Customer 21,71541,Closed Won,78,2026-02-15,won
-DEAL-0022,Customer 22,72434,Closed Won,44,2026-01-25,active
-DEAL-0023,Customer 23,178093,Negotiation,33,2026-01-09,won
-DEAL-0024,Customer 24,41825,Prospecting,50,2025-12-04,stale
-DEAL-0025,Customer 25,137168,Prospecting,75,2025-11-26,lost
-DEAL-0026,Customer 26,165133,Closed Won,41,2025-12-19,lost
-DEAL-0027,Customer 27,96621,Proposal,14,2025-11-22,lost
-DEAL-0028,Customer 28,81991,Qualification,70,2026-02-16,lost
-DEAL-0029,Customer 29,181968,Prospecting,48,2026-01-21,won
-DEAL-0030,Customer 30,145495,Closed Lost,58,2025-11-22,stale
-DEAL-0031,Customer 31,28229,Closed Won,71,2026-02-09,won
-DEAL-0032,Customer 32,62421,Negotiation,82,2026-01-11,won
-DEAL-0033,Customer 33,145595,Prospecting,48,2026-01-09,active
-DEAL-0034,Customer 34,101187,Closed Lost,75,2025-11-06,active
-DEAL-0035,Customer 35,178327,Qualification,25,2026-01-24,active
-DEAL-0036,Customer 36,47383,Negotiation,52,2026-01-16,active
-DEAL-0037,Customer 37,41089,Prospecting,27,2025-12-05,lost
-DEAL-0038,Customer 38,46742,Closed Lost,34,2026-01-26,lost
-DEAL-0039,Customer 39,197618,Qualification,32,2025-11-15,stale
-DEAL-0040,Customer 40,92169,Prospecting,78,2025-11-19,stale
-DEAL-0041,Customer 41,189742,Negotiation,20,2026-01-16,active
-DEAL-0042,Customer 42,197977,Qualification,83,2026-02-01,lost
-DEAL-0043,Customer 43,110376,Qualification,45,2025-10-28,won
-DEAL-0044,Customer 44,196612,Prospecting,52,2025-12-15,won
-DEAL-0045,Customer 45,64154,Closed Lost,21,2025-12-20,won
-DEAL-0046,Customer 46,36647,Prospecting,38,2025-12-08,lost
-DEAL-0047,Customer 47,148755,Proposal,50,2026-02-12,stale
-DEAL-0048,Customer 48,183226,Prospecting,38,2026-02-14,active
-DEAL-0049,Customer 49,194869,Closed Lost,66,2025-10-31,won
-DEAL-0050,Customer 50,165294,Proposal,17,2025-12-19,stale
+DEAL-0001,Customer 1,109482,Closed Lost,29,2026-02-03,stale
+DEAL-0002,Customer 2,73961,Closed Won,84,2026-02-13,won
+DEAL-0003,Customer 3,149700,Closed Lost,80,2025-11-27,won
+DEAL-0004,Customer 4,148320,Closed Lost,47,2026-02-14,active
+DEAL-0005,Customer 5,101917,Prospecting,79,2026-01-06,active
+DEAL-0006,Customer 6,85251,Prospecting,38,2026-01-03,lost
+DEAL-0007,Customer 7,178285,Qualification,29,2025-12-17,stale
+DEAL-0008,Customer 8,145478,Negotiation,85,2025-12-28,lost
+DEAL-0009,Customer 9,197223,Negotiation,51,2026-01-01,lost
+DEAL-0010,Customer 10,185442,Negotiation,13,2025-11-05,lost
+DEAL-0011,Customer 11,81075,Negotiation,89,2026-01-09,active
+DEAL-0012,Customer 12,125851,Closed Lost,88,2025-11-10,active
+DEAL-0013,Customer 13,34486,Prospecting,90,2026-02-18,stale
+DEAL-0014,Customer 14,58618,Closed Won,22,2025-12-17,won
+DEAL-0015,Customer 15,159188,Proposal,37,2025-11-11,won
+DEAL-0016,Customer 16,61521,Closed Won,82,2025-10-25,lost
+DEAL-0017,Customer 17,71352,Proposal,58,2026-02-17,won
+DEAL-0018,Customer 18,94521,Negotiation,80,2025-11-21,stale
+DEAL-0019,Customer 19,19534,Proposal,77,2026-02-12,stale
+DEAL-0020,Customer 20,164591,Negotiation,26,2025-11-17,stale
+DEAL-0021,Customer 21,43195,Negotiation,26,2025-12-31,active
+DEAL-0022,Customer 22,110115,Proposal,47,2026-01-16,won
+DEAL-0023,Customer 23,13635,Negotiation,28,2026-01-08,stale
+DEAL-0024,Customer 24,179033,Negotiation,25,2025-11-26,lost
+DEAL-0025,Customer 25,26093,Closed Won,49,2026-01-12,lost
+DEAL-0026,Customer 26,178143,Prospecting,13,2025-12-31,won
+DEAL-0027,Customer 27,106061,Prospecting,37,2025-12-21,lost
+DEAL-0028,Customer 28,110238,Closed Won,46,2026-01-03,stale
+DEAL-0029,Customer 29,127207,Negotiation,68,2025-11-01,active
+DEAL-0030,Customer 30,58105,Qualification,72,2025-12-20,won
+DEAL-0031,Customer 31,45264,Closed Won,49,2025-11-26,stale
+DEAL-0032,Customer 32,140732,Prospecting,75,2025-11-07,active
+DEAL-0033,Customer 33,170269,Closed Won,89,2026-01-09,lost
+DEAL-0034,Customer 34,87370,Qualification,42,2026-01-16,lost
+DEAL-0035,Customer 35,21255,Closed Lost,32,2025-12-01,won
+DEAL-0036,Customer 36,193100,Negotiation,81,2025-11-09,active
+DEAL-0037,Customer 37,128152,Qualification,13,2025-11-18,won
+DEAL-0038,Customer 38,18926,Closed Won,46,2025-11-13,won
+DEAL-0039,Customer 39,165428,Closed Lost,64,2026-01-18,won
+DEAL-0040,Customer 40,168602,Negotiation,21,2025-10-27,won
+DEAL-0041,Customer 41,191630,Closed Lost,20,2025-11-23,active
+DEAL-0042,Customer 42,175707,Qualification,23,2025-12-14,active
+DEAL-0043,Customer 43,46110,Prospecting,89,2026-02-05,stale
+DEAL-0044,Customer 44,24807,Prospecting,58,2026-01-11,lost
+DEAL-0045,Customer 45,39723,Qualification,37,2026-01-14,won
+DEAL-0046,Customer 46,50070,Qualification,44,2026-02-19,stale
+DEAL-0047,Customer 47,44459,Closed Lost,26,2025-11-11,active
+DEAL-0048,Customer 48,119656,Closed Lost,41,2025-10-25,won
+DEAL-0049,Customer 49,145126,Prospecting,27,2025-12-13,won
+DEAL-0050,Customer 50,85227,Negotiation,37,2025-12-20,active

@@ -27,6 +27,7 @@ class OrchestrateSettings(BaseSettings):
         env_prefix = "WATSONX_ORCHESTRATE_"
         env_file = ".env"
         case_sensitive = False
+        extra = "ignore"
 
 
 class OrchestrateAgent:
