@@ -1,3 +1,5 @@
+**ORCHESTRATEIQ - Team AgenticAlpha**
+
 ![OrchestrateIQ Architecture](docs/architecture_diagram.png)
 
 An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate workflows across HR, Sales, Customer Service, and Finance sectors. This solution demonstrates cross-sector intelligence, proactive orchestration, and actionable automation.
@@ -126,6 +128,7 @@ See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guide
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
