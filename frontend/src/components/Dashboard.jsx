@@ -25,34 +25,24 @@ const Dashboard = () => {
       setLoading(true);
       const sectorsList = ['hr', 'sales', 'service', 'finance'];
       const data = {};
-      
+
       for (const sector of sectorsList) {
         try {
           const response = await apiService.getDashboardData(sector);
           data[sector] = response.data;
         } catch (error) {
           console.error(`Error loading ${sector} data:`, error);
-          // Use default data if API fails
-          data[sector] = getDefaultData(sector);
+          // Set empty data or error state if API fails
+          data[sector] = { error: true, message: "Failed to load data" };
         }
       }
-      
+
       setDashboardData(data);
     } catch (error) {
       console.error('Error loading dashboard data:', error);
     } finally {
       setLoading(false);
     }
-  };
-
-  const getDefaultData = (sector) => {
-    const defaults = {
-      hr: { metrics: { total_employees: 1250, attrition_rate: 8.5 } },
-      sales: { metrics: { total_pipeline_value: 2500000, deals_closed: 45 } },
-      service: { metrics: { open_tickets: 234, avg_response_time: 2.5 } },
-      finance: { metrics: { total_revenue: 4500000, cash_flow: 1250000 } }
-    };
-    return defaults[sector] || {};
   };
 
   return (

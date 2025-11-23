@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api/v1';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -36,29 +36,27 @@ api.interceptors.response.use(
 export const apiService = {
   // Process a query through the agent
   processQuery: async (query, sector = null, context = {}) => {
-    return api.post('/query', {
-      query,
-      sector,
-      context,
+    // The new backend expects { "message": "your query" }
+    return api.post('/chat', {
+      message: query
     });
   },
 
-  // Get dashboard data for a sector
+  // Get dashboard data for a sector (Mock for now)
   getDashboardData: async (sector) => {
-    return api.get(`/dashboard/${sector}`);
+    // We can implement this later if needed
+    return Promise.resolve({ data: {} });
   },
 
   // Get list of sectors
   getSectors: async () => {
-    return api.get('/sectors');
+    return Promise.resolve({ data: ["HR", "Sales", "Customer Service", "Finance"] });
   },
 
   // Health check
   healthCheck: async () => {
-    return api.get('/health');
+    return api.get('/');
   },
 };
 
-// Export default for convenience
 export default apiService;
-

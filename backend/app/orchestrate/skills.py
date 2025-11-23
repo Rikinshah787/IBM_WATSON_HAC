@@ -68,6 +68,18 @@ class DigitalSkillsManager:
         logger.info(f"🔧 Executing skill: {skill_name}.{operation}")
         logger.debug(f"Parameters: {parameters}")
         
+        # Check if we should use mock data or real execution
+        import os
+        use_mock = os.getenv("USE_MOCK_MODE", "True").lower() == "true"
+        
+        if not use_mock:
+            # In real mode, we would call the watsonx Orchestrate Skill API here
+            # Since we don't have the specific Skill IDs mapped, we raise an error
+            # to prove we are NOT using dummy data.
+            error_msg = f"⛔ Real Skill Execution: {skill_name}.{operation} (Not configured with Skill IDs)"
+            logger.error(error_msg)
+            raise NotImplementedError(error_msg)
+
         if skill_name not in self.skills:
             logger.error(f"❌ Unknown skill: {skill_name}")
             raise ValueError(f"Unknown skill: {skill_name}")
