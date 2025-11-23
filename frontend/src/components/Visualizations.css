@@ -1,17 +1,17 @@
 .visualizations {
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .visualizations.light {
-  border-top-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(0, 0, 0, 0.06);
 }
 
 .chart-title {
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-md);
   opacity: 0.8;
+  letter-spacing: -0.02em;
 }
-
