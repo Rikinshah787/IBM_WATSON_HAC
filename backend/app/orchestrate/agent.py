@@ -12,6 +12,7 @@ import time
 from pydantic_settings import BaseSettings
 from app.models.schemas import QueryResponse, DashboardData, Sector, Insight, Action
 from app.orchestrate.workflows import WorkflowOrchestrator
+from app.orchestrate.watsonx_ai import WatsonXClient, WatsonXSettings
 from app.data import get_data_handler
 
 logger = logging.getLogger(__name__)
@@ -41,6 +42,7 @@ class OrchestrateAgent:
         self.settings = OrchestrateSettings()
         self.is_initialized = False
         self.workflow_orchestrator = None
+        self.watsonx_client = None
         logger.info("🔧 OrchestrateAgent instance created")
     
     async def initialize(self):
@@ -60,9 +62,21 @@ class OrchestrateAgent:
                 logger.debug(f"API URL: {self.settings.url}")
                 logger.debug(f"Project ID: {self.settings.project_id}")
             
+            # Initialize WatsonX Client
+            logger.info("🧠 Initializing WatsonX AI Client...")
+            try:
+                self.watsonx_client = WatsonXClient()
+                if self.watsonx_client.available:
+                    logger.info("✅ WatsonX AI Client available")
+                else:
+                    logger.warning("⚠️ WatsonX AI Client not configured (missing credentials)")
+            except Exception as e:
+                logger.warning(f"⚠️ Failed to initialize WatsonX Client: {e}")
+                self.watsonx_client = None
+
             # Initialize workflow orchestrator
             logger.info("🔗 Initializing workflow orchestrator...")
-            self.workflow_orchestrator = WorkflowOrchestrator()
+            self.workflow_orchestrator = WorkflowOrchestrator(watsonx_client=self.watsonx_client)
             await self.workflow_orchestrator.initialize()
             
             self.is_initialized = True

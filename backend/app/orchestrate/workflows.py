@@ -20,9 +20,10 @@ class WorkflowOrchestrator:
     Maps intents to workflows and executes them
     """
     
-    def __init__(self):
+    def __init__(self, watsonx_client=None):
         """Initialize workflow orchestrator"""
         self.skills_manager = None
+        self.watsonx_client = watsonx_client
         self.intent_mappings = self._initialize_intent_mappings()
         logger.info("🔧 WorkflowOrchestrator created")
     
@@ -119,7 +120,30 @@ class WorkflowOrchestrator:
         
         query_lower = query.lower()
         
-        # Simple keyword-based intent recognition (can be enhanced with watsonx.ai)
+        # Try Watson AI for intent recognition first
+        if self.watsonx_client and self.watsonx_client.available:
+            logger.debug("🧠 Using Watson AI for intent recognition")
+            ai_result = await self.watsonx_client.recognize_intent(query, [s.value for s in Sector])
+            if ai_result and ai_result.get("intent"):
+                intent = ai_result["intent"]
+                # Map string sectors back to Enum
+                detected_sectors = []
+                for s_str in ai_result.get("sectors", []):
+                    try:
+                        detected_sectors.append(Sector(s_str.lower()))
+                    except ValueError:
+                        pass
+                
+                logger.info(f"✅ Watson recognized intent: {intent}, Sectors: {detected_sectors}")
+                return {
+                    "intent": intent,
+                    "sectors": detected_sectors,
+                    "confidence": 0.95
+                }
+
+        # Fallback to keyword-based intent recognition
+        logger.debug("⚠️ Watson AI unavailable or failed, falling back to keywords")
+        
         intent = "general_query"
         detected_sectors = []
         
@@ -156,7 +180,7 @@ class WorkflowOrchestrator:
         if not detected_sectors and sector:
             detected_sectors = [sector]
         
-        logger.info(f"✅ Intent recognized: {intent}, Sectors: {detected_sectors}")
+        logger.info(f"✅ Intent recognized (Keyword): {intent}, Sectors: {detected_sectors}")
         
         return {
             "intent": intent,
@@ -239,10 +263,18 @@ class WorkflowOrchestrator:
         analysis = await data_handler.analyze_attrition(hr_data)
         
         # Generate insights
+        description = f"Attrition rate is {analysis.get('attrition_rate', 0):.1f}% this quarter"
+        
+        # Use Watson to generate insight if available
+        if self.watsonx_client and self.watsonx_client.available:
+            ai_insight = await self.watsonx_client.generate_insight(query, analysis, context)
+            if ai_insight:
+                description = ai_insight
+
         insights = [
             Insight(
                 title="Attrition Trend Analysis",
-                description=f"Attrition rate is {analysis.get('attrition_rate', 0):.1f}% this quarter",
+                description=description,
                 sector=Sector.HR,
                 confidence=0.9,
                 data=analysis

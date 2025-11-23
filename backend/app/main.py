@@ -32,6 +32,18 @@ class Settings(BaseSettings):
         case_sensitive = False
         extra = "ignore"
 
+    # Watson Credentials
+    watsonx_orchestrate_api_key: str = ""
+    watsonx_orchestrate_url: str = "https://us-south.ml.cloud.ibm.com"
+    watsonx_orchestrate_project_id: str = ""
+    watsonx_ai_api_key: str = ""
+    watsonx_ai_url: str = "https://us-south.ml.cloud.ibm.com"
+    watsonx_ai_project_id: str = ""
+    watsonx_ai_model_id: str = "ibm/granite-13b-chat-v2"
+    
+    # Feature Flags
+    use_mock_mode: bool = False
+
 
 settings = Settings()
 
