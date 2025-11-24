@@ -47,7 +47,7 @@ const ChatInterface = () => {
       const botMessage = {
         id: Date.now() + 1,
         type: 'bot',
-        text: response.data.response_text || 'I processed your query successfully.',
+        text: response.data.response || 'I processed your query successfully.',
         data: response.data,
         timestamp: new Date()
       };

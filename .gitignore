@@ -15,9 +15,7 @@ dist/
 build/
 
 # Environment variables
-.env
-.env.local
-.env.*.local
+
 
 # Node
 node_modules/
@@ -57,3 +55,22 @@ backend/__pycache__/
 
 # Backup git folder
 .git_backups/
+
+# Temporary Test Scripts & Output
+test_*.py
+test_*.ps1
+test_*.bat
+*_results.txt
+*_output.txt
+available_models.txt
+capability_report.txt
+find_instances.py
+get_watsonx_ai_details.py
+list_available_models.py
+verify_final.py
+capability_test.py
+simple_test.py
+token.json
+watsonx_ai_details.txt
+watsonx_ai_SUCCESS_TEST.txt
+watsonx_ai_test_final.txt
