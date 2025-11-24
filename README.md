@@ -126,9 +126,17 @@ IBMWATSON/
 
 See [docs/meta/CONTRIBUTING.md](docs/meta/CONTRIBUTING.md) for development guidelines.
 
+## Future Work with Rigorous Testing (Contd...)
+Please note this has currently using architec as  -> 
+
+Local Model -> Agent build on langchain (HR , SALES, CX, FINANCE) + IBM Granite -> Lang Graph -> Data Analysis -> Output. 
+
+This same could be acheive with IBM ORCH ( I had issue with my account ).  
+
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
