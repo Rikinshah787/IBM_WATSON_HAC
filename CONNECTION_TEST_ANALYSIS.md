@@ -54,7 +54,7 @@ The error `"Failed to retrieve API key token. Status code: 404"` suggests:
 |------------------------|--------------|--------------------------------------|  
 | IBM Cloud IAM          | ✅ Working   | Token obtained successfully          |  
 | Access Token           | ✅ Valid     | Expires in 1 hour                    |  
-| watsonx Orchestrate API| ❌ Not Working | Instance ID or URL mismatch          |  
+| watsonx Orchestrate API| ❌ Not Working | Problem wiht IBM AC                |  
 | watsonx.ai API         | ✅ Ready     | Credentials available in `.env`      |  
 
 ---
