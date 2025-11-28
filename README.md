@@ -1,6 +1,6 @@
 <h1 align="center"><b>OrchestrateIQ - AI-Powered Business Command Center</b></h1>
-An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate workflows across HR, Sales, Customer Service, and Finance sectors. This solution demonstrates cross-sector intelligence, proactive orchestration, and actionable automation. 
-(Note this is DEMO LINK https://ibm-aiorch-u5vh.vercel.app)
+An intelligent AI agent solution using IBM watsonx Orchestrate to orchestrate workflows across HR, Sales, Customer Service, and Finance sectors. This solution demonstrates cross-sector intelligence, proactive orchestration, and actionable automation.  
+<h3 align="center">(Note this is DEMO LINK https://ibm-aiorch-u5vh.vercel.app) </h3>
 
 ## 🏗️ Architecture
 
@@ -137,6 +137,7 @@ This same could be acheive with IBM ORCH ( I had issue with my account ).
 ## 📝 License
 
 This project is created for IBM watsonx Orchestrate Hackathon.
+
 
 
 
